@@ -1,0 +1,24 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+                           http://www.springframework.org/schema/aop
+                           http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+	<bean id="car" class="uk.co.tpplc.springexamples.container.Car">
+		<property name="driver" ref="murdock" />
+		<property name="engine" ref="diesel" />
+		<constructor-arg value="chevrolet"/>
+	</bean>
+
+	<bean id="v8" class="uk.co.tpplc.springexamples.container.V8Petrol" />
+
+	<bean id="diesel" class="uk.co.tpplc.springexamples.container.Flat4Diesel" />
+
+	<bean id="murdock" class="uk.co.tpplc.springexamples.container.Murdock">
+		<property name="quote" value="But, we got inbound subsonic UAVs with missile lock, and they bring down planes all the time!" />
+	</bean>
+</beans>
