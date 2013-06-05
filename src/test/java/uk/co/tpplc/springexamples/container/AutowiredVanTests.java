@@ -10,19 +10,19 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration
-public class AutowiredCarTests {
+public class AutowiredVanTests {
 
 	@Autowired
-	Car car;
+	Van van;
 	
 	@Autowired
 	Driver ba;
 
 	@Test
 	public void letsSeeIfOurCarIsWiredUp(){
-		System.out.println("Autowired - " +car.start());
-		assertEquals("gm", car.getMake());
-		assertEquals("Murdock", car.getDriver().getName());
+		System.out.println("Autowired - " +van.start());
+		assertEquals("gm", van.getMake());
+		assertEquals("Murdock", van.getDriver().getName());
 	}
 	
 	@Test

@@ -1,10 +1,10 @@
 package uk.co.tpplc.springexamples.container;
 
-public class Car {
+public class Van {
 	
 	final String make;
 	
-	public Car(String make){
+	public Van(String make){
 		this.make = make;
 	}
 		

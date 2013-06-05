@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class JavaWiredCarConfig {
+public class JavaWiredVanConfig {
 
 	@Bean
 	public Driver murdock(){
@@ -19,10 +19,10 @@ public class JavaWiredCarConfig {
 	}
 	
 	@Bean
-	public Car car(){
-		Car car = new Car("ford");
-		car.setDriver(murdock());
-		car.setEngine(v8());
-		return car;
+	public Van van(){
+		Van van = new Van("ford");
+		van.setDriver(murdock());
+		van.setEngine(v8());
+		return van;
 	}
 }

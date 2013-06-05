@@ -8,9 +8,9 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
-public class ManualWiringCarTests {
+public class ManualWiringVanTests {
 
-	private Car car;
+	private Van van;
 
 	private Engine v8;
 
@@ -19,9 +19,9 @@ public class ManualWiringCarTests {
 	@Before
 	public void setup() {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(
-				"/uk/co/tpplc/springexamples/container/ManualCarTests-context.xml");
+				"/uk/co/tpplc/springexamples/container/ManualVanTests-context.xml");
 
-		car = (Car) ctx.getBean("car");
+		van = (Van) ctx.getBean("van");
 		v8 = (Engine) ctx.getBean("v8");
 		diesel = (Engine) ctx.getBean("diesel");
 	}
@@ -29,8 +29,8 @@ public class ManualWiringCarTests {
 	@Test
 	public void seeIfCarIsWiredUp() {
 
-		System.out.println(car.start());
-		assertEquals("chevrolet", car.getMake());
+		System.out.println(van.start());
+		assertEquals("chevrolet", van.getMake());
 	}
 
 	@Test

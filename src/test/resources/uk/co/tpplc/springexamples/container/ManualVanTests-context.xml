@@ -8,7 +8,7 @@
                            http://www.springframework.org/schema/context
                            http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 
-	<bean id="car" class="uk.co.tpplc.springexamples.container.Car">
+	<bean id="van" class="uk.co.tpplc.springexamples.container.Van">
 		<property name="driver" ref="murdock" />
 		<property name="engine" ref="diesel" />
 		<constructor-arg value="chevrolet"/>
