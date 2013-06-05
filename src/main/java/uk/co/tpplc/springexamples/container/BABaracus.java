@@ -3,7 +3,7 @@ package uk.co.tpplc.springexamples.container;
 import org.springframework.stereotype.Component;
 
 @Component
-public class BA implements Driver {
+public class BABaracus implements Driver {
 
 	private String quote = "I'm not gettin' on a chopper with this nutjob!";
 	
@@ -25,7 +25,7 @@ public class BA implements Driver {
 
 	@Override
 	public String getName() {
-		return "BA";
+		return "BABaracus";
 	}
 
 }

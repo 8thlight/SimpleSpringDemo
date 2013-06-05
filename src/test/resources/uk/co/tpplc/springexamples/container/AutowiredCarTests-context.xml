@@ -23,5 +23,5 @@
 	<bean id="murdock" class="uk.co.tpplc.springexamples.container.Murdock"
 		p:quote="Technically, we're not flying..." />
 		
-	<bean id="ba" class="uk.co.tpplc.springexamples.container.BA" />
+	<bean id="ba" class="uk.co.tpplc.springexamples.container.BABaracus" />
 </beans>
