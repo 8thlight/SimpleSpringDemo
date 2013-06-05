@@ -10,7 +10,7 @@ public class Flat4Diesel implements Engine{
 
 	@Override
 	public String stop() {
-		return "clunck, lurch";
+		return "clunk, lurch";
 	}
 
 	@Override

@@ -1,6 +1,6 @@
 package uk.co.tpplc.springexamples.vehicles;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import uk.co.tpplc.springexamples.engines.Engine;
-import uk.co.tpplc.springexamples.vehicles.Van;
+import uk.co.tpplc.springexamples.people.Driver;
 
 
 public class ManualWiringVanTests {
@@ -19,6 +19,8 @@ public class ManualWiringVanTests {
 
 	private Engine diesel;
 
+	private Driver murdock;
+
 	@Before
 	public void setup() {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(
@@ -27,6 +29,7 @@ public class ManualWiringVanTests {
 		van = (Van) ctx.getBean("van");
 		v8 = (Engine) ctx.getBean("v8");
 		diesel = (Engine) ctx.getBean("diesel");
+		murdock = (Driver) ctx.getBean("murdock");
 	}
 
 	@Test
@@ -34,6 +37,8 @@ public class ManualWiringVanTests {
 
 		System.out.println(van.start());
 		assertEquals("chevrolet", van.getMake());
+		assertEquals(diesel, van.getEngine());
+		assertEquals(murdock, van.getDriver());
 	}
 
 	@Test

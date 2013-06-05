@@ -4,7 +4,7 @@ package uk.co.tpplc.springexamples.people;
 
 public class Murdock implements Driver {
 
-	protected String quote = "The C-130 versus the Mercedes Benz!";;
+	protected String quote = "The C-130 versus the Mercedes Benz!";
 	
 	@Override
 	public String turnKey() {
