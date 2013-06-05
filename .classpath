@@ -3,6 +3,7 @@
 	<classpathentry kind="src" output="target/classes" path="src/main/java"/>
 	<classpathentry kind="src" output="target/test-classes" path="src/integration-test/java"/>
 	<classpathentry kind="src" path="src/integration-test/resources"/>
+	<classpathentry kind="src" path="src/test/java"/>
 	<classpathentry kind="lib" path="lib/spring-core-3.1.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring-beans-3.1.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring-context-3.1.4.RELEASE.jar"/>

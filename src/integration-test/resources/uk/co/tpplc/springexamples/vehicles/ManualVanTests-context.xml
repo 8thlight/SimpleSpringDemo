@@ -14,9 +14,9 @@
 		<constructor-arg value="chevrolet"/>
 	</bean>
 
-	<bean id="v8" class="uk.co.tpplc.springexamples.vehicles.V8Petrol" />
+	<bean id="v8" class="uk.co.tpplc.springexamples.engines.V8Petrol" />
 
-	<bean id="diesel" class="uk.co.tpplc.springexamples.vehicles.Flat4Diesel" />
+	<bean id="diesel" class="uk.co.tpplc.springexamples.engines.Flat4Diesel" />
 
 	<bean id="murdock" class="uk.co.tpplc.springexamples.people.Murdock">
 		<property name="quote" value="But, we got inbound subsonic UAVs with missile lock, and they bring down planes all the time!" />

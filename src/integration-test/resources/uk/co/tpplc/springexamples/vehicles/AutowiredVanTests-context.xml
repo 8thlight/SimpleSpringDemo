@@ -18,7 +18,7 @@
 		p:engine-ref="v8"
 		c:make="gm"/>
 
-	<bean id="v8" class="uk.co.tpplc.springexamples.vehicles.V8Petrol" />
+	<bean id="v8" class="uk.co.tpplc.springexamples.engines.V8Petrol" />
 
 	<bean id="murdock" class="uk.co.tpplc.springexamples.people.Murdock"
 		p:quote="Technically, we're not flying..." />

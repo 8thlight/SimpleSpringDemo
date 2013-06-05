@@ -7,7 +7,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import uk.co.tpplc.springexamples.vehicles.Engine;
+import uk.co.tpplc.springexamples.engines.Engine;
 import uk.co.tpplc.springexamples.vehicles.Van;
 
 

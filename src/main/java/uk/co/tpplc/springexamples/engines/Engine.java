@@ -1,4 +1,4 @@
-package uk.co.tpplc.springexamples.vehicles;
+package uk.co.tpplc.springexamples.engines;
 
 public interface Engine {
 	public String start();

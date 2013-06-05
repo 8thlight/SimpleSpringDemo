@@ -1,5 +1,6 @@
 package uk.co.tpplc.springexamples.vehicles;
 
+import uk.co.tpplc.springexamples.engines.Engine;
 import uk.co.tpplc.springexamples.people.Driver;
 
 public class Van {
