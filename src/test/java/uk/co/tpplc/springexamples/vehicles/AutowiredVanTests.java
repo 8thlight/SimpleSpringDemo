@@ -1,4 +1,4 @@
-package uk.co.tpplc.springexamples.container;
+package uk.co.tpplc.springexamples.vehicles;
 
 import static org.junit.Assert.assertEquals;
 
@@ -7,6 +7,9 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import uk.co.tpplc.springexamples.people.Driver;
+import uk.co.tpplc.springexamples.vehicles.Van;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration

@@ -13,15 +13,15 @@
 
 	<context:component-scan base-package="uk.co.tpplc.springexample.container" />
 
-	<bean id="car" class="uk.co.tpplc.springexamples.container.Van"
+	<bean id="car" class="uk.co.tpplc.springexamples.vehicles.Van"
 		p:driver-ref="murdock"
 		p:engine-ref="v8"
 		c:make="gm"/>
 
-	<bean id="v8" class="uk.co.tpplc.springexamples.container.V8Petrol" />
+	<bean id="v8" class="uk.co.tpplc.springexamples.vehicles.V8Petrol" />
 
-	<bean id="murdock" class="uk.co.tpplc.springexamples.container.Murdock"
+	<bean id="murdock" class="uk.co.tpplc.springexamples.people.Murdock"
 		p:quote="Technically, we're not flying..." />
 		
-	<bean id="ba" class="uk.co.tpplc.springexamples.container.BABaracus" />
+	<bean id="ba" class="uk.co.tpplc.springexamples.people.BABaracus" />
 </beans>

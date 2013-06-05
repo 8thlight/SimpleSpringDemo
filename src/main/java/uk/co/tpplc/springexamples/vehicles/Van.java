@@ -1,4 +1,6 @@
-package uk.co.tpplc.springexamples.container;
+package uk.co.tpplc.springexamples.vehicles;
+
+import uk.co.tpplc.springexamples.people.Driver;
 
 public class Van {
 	

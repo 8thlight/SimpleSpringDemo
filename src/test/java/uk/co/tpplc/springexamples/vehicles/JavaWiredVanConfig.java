@@ -1,7 +1,13 @@
-package uk.co.tpplc.springexamples.container;
+package uk.co.tpplc.springexamples.vehicles;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import uk.co.tpplc.springexamples.people.Driver;
+import uk.co.tpplc.springexamples.people.Murdock;
+import uk.co.tpplc.springexamples.vehicles.Engine;
+import uk.co.tpplc.springexamples.vehicles.V8Petrol;
+import uk.co.tpplc.springexamples.vehicles.Van;
 
 @Configuration
 public class JavaWiredVanConfig {

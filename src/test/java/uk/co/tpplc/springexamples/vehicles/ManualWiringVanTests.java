@@ -1,4 +1,4 @@
-package uk.co.tpplc.springexamples.container;
+package uk.co.tpplc.springexamples.vehicles;
 
 import static org.junit.Assert.*;
 
@@ -6,6 +6,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import uk.co.tpplc.springexamples.vehicles.Engine;
+import uk.co.tpplc.springexamples.vehicles.Van;
 
 
 public class ManualWiringVanTests {
@@ -19,7 +22,7 @@ public class ManualWiringVanTests {
 	@Before
 	public void setup() {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(
-				"/uk/co/tpplc/springexamples/container/ManualVanTests-context.xml");
+				"/uk/co/tpplc/springexamples/vehicles/ManualVanTests-context.xml");
 
 		van = (Van) ctx.getBean("van");
 		v8 = (Engine) ctx.getBean("v8");

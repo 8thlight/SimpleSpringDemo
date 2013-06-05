@@ -1,4 +1,4 @@
-package uk.co.tpplc.springexamples.container;
+package uk.co.tpplc.springexamples.vehicles;
 
 import static org.junit.Assert.*;
 
@@ -6,7 +6,9 @@ import org.junit.Test;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 
-@ContextConfiguration(locations = { "/uk/co/tpplc/springexamples/container/JavaWiredVanTests-context.xml" })
+import uk.co.tpplc.springexamples.vehicles.Van;
+
+@ContextConfiguration(locations = { "/uk/co/tpplc/springexamples/vehicles/JavaWiredVanTests-context.xml" })
 public class JavaWiredVanTests extends AbstractJUnit4SpringContextTests {
 	
 	@Test

@@ -1,4 +1,5 @@
-package uk.co.tpplc.springexamples.container;
+package uk.co.tpplc.springexamples.people;
+
 
 
 public class Murdock implements Driver {

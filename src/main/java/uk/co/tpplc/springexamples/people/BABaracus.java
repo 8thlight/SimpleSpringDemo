@@ -1,6 +1,7 @@
-package uk.co.tpplc.springexamples.container;
+package uk.co.tpplc.springexamples.people;
 
 import org.springframework.stereotype.Component;
+
 
 @Component
 public class BABaracus implements Driver {

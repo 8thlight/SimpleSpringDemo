@@ -1,4 +1,4 @@
-package uk.co.tpplc.springexamples.container;
+package uk.co.tpplc.springexamples.vehicles;
 
 public class V8Petrol implements Engine {
 
