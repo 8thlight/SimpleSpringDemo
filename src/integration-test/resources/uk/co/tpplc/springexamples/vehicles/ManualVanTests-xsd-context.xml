@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+	<bean id="van" class="uk.co.tpplc.springexamples.vehicles.Van"
+		p:driver-ref="murdock" p:engine-ref="diesel" c:make="chevrolet" />
+
+	<bean id="v8" class="uk.co.tpplc.springexamples.engines.V8Petrol" />
+
+	<bean id="diesel" class="uk.co.tpplc.springexamples.engines.Flat4Diesel" />
+
+	<bean id="murdock" class="uk.co.tpplc.springexamples.people.Murdock"
+		p:quote="But, we got inbound subsonic UAVs with missile lock, and they bring down planes all the time!" />
+</beans>

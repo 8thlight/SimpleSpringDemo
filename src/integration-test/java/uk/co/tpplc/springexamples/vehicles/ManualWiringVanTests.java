@@ -24,7 +24,7 @@ public class ManualWiringVanTests {
 	@Before
 	public void setup() {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(
-				"/uk/co/tpplc/springexamples/vehicles/ManualVanTests-context.xml");
+				"/uk/co/tpplc/springexamples/vehicles/ManualVanTests-dtd-context.xml");
 
 		van = (Van) ctx.getBean("van");
 		v8 = (Engine) ctx.getBean("v8");

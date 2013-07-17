@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+    "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+	<bean id="van" class="uk.co.tpplc.springexamples.vehicles.Van">
+		<property name="driver" ref="murdock" />
+		<property name="engine" ref="diesel" />
+		<constructor-arg value="chevrolet"/>
+	</bean>
+
+	<bean id="v8" class="uk.co.tpplc.springexamples.engines.V8Petrol" />
+
+	<bean id="diesel" class="uk.co.tpplc.springexamples.engines.Flat4Diesel" />
+
+	<bean id="murdock" class="uk.co.tpplc.springexamples.people.Murdock">
+		<property name="quote" value="But, we got inbound subsonic UAVs with missile lock, and they bring down planes all the time!" />
+	</bean>
+</beans>
